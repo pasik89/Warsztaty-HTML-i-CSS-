@@ -1,7 +1,206 @@
-#mainContainer {
-  width: auto;
+@font-face {
+font-family: "Raleway";
+src:url('../fonts/Raleway-Regular.ttf');
 }
+#mainContainer {
+  width: 1200px;
+  font-family: Raleway;
+}
+/*Od tego miejsca są style dla headera i nawigacji. Łącznie z animacją submenu.*/
 #header {
   width: auto;
   background-color: black;
+}
+.greenWord {
+  color: rgb(40, 199, 177);
+}
+.navi {
+  width: 1200px;
+  display: table;
+  margin: auto;
+}
+.logo {
+  display: table-cell;
+  text-align: left;
+  color: white;
+  padding-left: 40px;
+}
+.menu {
+  color: white;
+  display: table-cell;
+  text-align: right;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.list {
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+}
+.hoveredList:hover {
+  background-color: rgba(40, 199, 177, 0.25);
+cursor: pointer;
+border-radius: 3px;
+}
+.secondMenu {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  top: 40px;
+color: white;
+background-color: black;
+border: 1px solid grey;
+text-align: left;
+animation-name: menu;
+animation-duration: 1s;
+}
+.dziubek {
+  position: absolute;
+  top: -26px;
+  left: 33px;
+  width: 0;
+  height: 0;
+border-top: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 15px solid black;
+border-left: 15px solid transparent;
+z-index: 1:
+
+}
+.list:hover ul {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.dziubek2 {
+  position: absolute;
+  top: -26px;
+  left: 20px;
+  width: 0;
+  height: 0;
+border-top: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 15px solid black;
+border-left: 15px solid transparent;
+z-index: 1:
+}
+.dziubek3{
+  position: absolute;
+  top: -26px;
+  left: 20px;
+  width: 0;
+  height: 0;
+border-top: 15px solid transparent;
+border-right: 15px solid transparent;
+border-bottom: 15px solid black;
+border-left: 15px solid transparent;
+z-index: 1:
+}
+.secondList {
+  padding: 3px;
+}
+@keyframes menu {
+  from {
+    transform: translateY(25px);
+  }
+  to {
+    transform: translateY(0deg);
+  }
+}
+/* Od tego miejsca zaczyna się sekcja ze zdjęciem fotela i nagłówkiem.*/
+.section1 {
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(204,204,212,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(204,204,212,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ccccd4', GradientType=0 );
+}
+.sectionContainer {
+  display: table;
+}
+.sectionNag {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 40px;
+  font-size: 70px;
+}
+.chairImage {
+  display: table-cell;
+  vertical-align: middle;
+}
+.sectionInfo {
+  width: 350px;
+  padding-left: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.sectionInfo h1 {
+  font-size: 39px;
+}
+.sectionInfo p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+  .linkInfo:link {
+    text-decoration:none;
+    color: white;
+    background-color: rgb(40, 199, 177);
+    padding: 15px;
+    border-radius: 5px;
+  }
+.linkInfo:visited {
+  text-decoration:none;
+  color: white;
+  background-color: rgb(40, 199, 177);
+  padding: 15px;
+  border-radius: 5px;
+}
+.sectionNag2 {
+  display: table-cell;
+  width: auto;
+  vertical-align: middle;
+  padding-left: 40px;
+  font-size: 70px;
+  text-align: right;
+}
+/*Tu zaczyna się stylowanie drugiej sekcji*/
+.section2 {
+  width: auto;
+
+}
+.section2Container {
+  display: table;
+  width: 1000px;
+  margin: auto;
+
+}
+.box1 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  border-top: 15px solid white;
+}
+.box2 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  border-top: 15px solid white;
+}
+.box3 {
+  display: table-cell;
+  vertical-align: middle;
+  width: 300px;
+  border: 1px solid grey;
+  margin: 15px;
 }
